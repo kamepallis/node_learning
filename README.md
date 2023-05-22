@@ -6,6 +6,9 @@ What is node JS?
             Each request assigned to one event, request is completed response will come(call back)
             Event loop mechanisam
             Each request working parallelly
+    
+    https://www.youtube.com/watch?v=gmOa05H7uiI&feature=youtu.be
+
 What is NPM?
     -> Node package manager
     -> Library(Registry- share and borrow packages) for JavaScript Framework
@@ -20,3 +23,9 @@ package.json
 
 Steps to generate the package.json
     $npm init 
+Installing  a package
+    $npm i <packagename>  / npm install <packagename>
+        package-lock.json dependency tree
+        node_modules- All downloaded packages are available here
+                      ignore node_module while trnsering(.gitignore)
+                      $npm install , will install the all depemdencies
