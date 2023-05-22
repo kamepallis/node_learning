@@ -8,7 +8,9 @@ What is node JS?
             Each request working parallelly
 What is NPM?
     -> Node package manager
-    -> Library for JavaScript Framework
+    -> Library(Registry- share and borrow packages) for JavaScript Framework
+    -> Adapt packages of code for your apps, or incorporate packages as they are
+    -> Download standalone tools you can use right away
 
 package.json
     -> Entry point for application
