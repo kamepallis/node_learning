@@ -29,3 +29,9 @@ Installing  a package
         node_modules- All downloaded packages are available here
                       ignore node_module while trnsering(.gitignore)
                       $npm install , will install the all depemdencies
+
+Inbuilt packages: require('package name')
+                    let os = require('os');  /os - operating system package
+                    os.platform(); os.arch();
+                    fs---> file system package
+                    
