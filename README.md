@@ -34,4 +34,15 @@ Inbuilt packages: require('package name')
                     let os = require('os');  /os - operating system package
                     os.platform(); os.arch();
                     fs---> file system package
-                    
+                    http ---> server = http.createServer(()=>{});
+                                server.listen(7310);
+
+
+Node js ceates it's own server. Doesn't requie any external agent.
+Es5 and Es6
+Es5: 
+function add(a,b) {
+    return a+b;
+}
+
+const add = (a,b) => {return a+b};
