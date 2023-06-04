@@ -46,3 +46,36 @@ function add(a,b) {
 }
 
 const add = (a,b) => {return a+b};
+
+
+
+http = require('http');
+let server = http.createServer((req, res) => {
+    res.write("<h1>Response from server</h1>");
+    res.end();
+});
+server.listen(7310);
+
+let server = http.createServer(function(req,res){
+
+});
+
+npm start ---> npm run start
+
+run vs start- there is no diference
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
