@@ -125,6 +125,13 @@ hrlps to restart the app continuoulsy, after any change
 		app.use("/category", categoryRouter);
 		
 		
+		npm install morgon
+		npm install dotenv
+		
+		let categoryRouter = require("./src/controller/categoryRouter");
+		module.exports = categoryRouter;
+		
+		
 		
 #Ejs 
 		Template engine for UI

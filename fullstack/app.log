@@ -1,0 +1,5 @@
+::1 - - [04/Jun/2023:21:29:35 +0000] "GET /category HTTP/1.1" 200 323
+::1 - - [04/Jun/2023:21:33:05 +0000] "GET /category/details HTTP/1.1" 200 23
+::1 - - [04/Jun/2023:21:33:10 +0000] "GET /product/details HTTP/1.1" 200 22
+::1 - - [04/Jun/2023:21:33:15 +0000] "GET /product HTTP/1.1" 200 22
+::1 - - [04/Jun/2023:21:33:22 +0000] "GET /product/details HTTP/1.1" 304 -
