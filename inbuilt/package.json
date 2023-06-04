@@ -4,7 +4,7 @@
   "main": "fs.js",
   "scripts": {
     "start": "node http.js",
-    "dev": "node staticApi.js"
+    "dev": "nodemon staticApi.js"
   },
   "author": "",
   "license": "ISC",
