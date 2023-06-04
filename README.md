@@ -85,8 +85,7 @@ hrlps to restart the app continuoulsy, after any change
 #Express 
 		$npm i express
         TO handle/specialise routing		
-#Ejs 
-		Template engine for UI
+
 		let express = require('express');
 		let app = express();
 		let port = 8888;
@@ -107,7 +106,28 @@ hrlps to restart the app continuoulsy, after any change
 			console.log(`Runnning on ${port}`);
 		})
 		
-
+		
+# Express Router
+		let express = require('express');
+		let app = express();
+		
+		let categoryRouter = express.Routee();
+		categoryRouter.route("/")
+			.get((rea,res)=> {
+				res.send("category default router");
+			);
+		categoryRouter.route("/details)
+			.get((req,res)=> {
+				res.send("category details router");
+			});
+		
+		
+		app.use("/category", categoryRouter);
+		
+		
+		
+#Ejs 
+		Template engine for UI
 
 
 

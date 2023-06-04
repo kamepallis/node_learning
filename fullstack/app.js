@@ -2,33 +2,44 @@ let express = require('express');
 let app = express();
 let port = 8888;
 
+let categoryRouter = express.Router();
+let productRouter = express.Router();
+
 //Router
 app.get("/",(req,res)=>{
     res.send("default route from express");
 })
 
 
-app.get("/category", (req,res) => {
-    res.send("ctegory rout");
-})
+categoryRouter.route("/")
+    .get(function(req,res) {
+        res.send("category default");
+    });
 
-app.get("/details", (req,res) => {
-    res.send("ctegory details rout");
-})
+categoryRouter.route("/details")
+    .get(function(req,res){
+        res.send("category details route");
+    });
 
-app.get("/product", (req,res) => {
-    res.send("product rout");
-})
 
-app.get("/details", (req,res) => {
-    res.send("product details rout");
-})
+productRouter.route("/")
+    .get((req,res)=> {
+        res.send("Product default route");
+    })
+
+productRouter.route("/details")
+    .get((req,res)=> {
+        res.send("Product details route");
+    })
+
+
+app.use("/category", categoryRouter);
+app.use("/product", productRouter);
 
 //creating server
 app.listen(port, (err)=> {
     if(err)
         throw error;
-    console.log("Running on port: 8888");
     console.log("Running on port:" + port);
     console.log(`Runnning on ${port}`);
 })
