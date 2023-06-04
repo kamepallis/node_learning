@@ -64,6 +64,30 @@ npm start ---> npm run start
 
 run vs start- there is no diference
 
+# local vs dev vs gloabl depemdencies
+
+Local : 
+		local to the folder 
+		and can be used in that folder
+		once istalled, it can be used in that folder only.
+			$npm i <packagename>
+
+Dev   : only for development purpose like unit tests
+			$ npm i --save-dev <packagename>
+		
+Global :  installed in system
+		  admin acces needed 
+		  to start or build the application
+			$npm i -g <packagename>
+# Nodemon
+hrlps to restart the app continuoulsy, after any change
+
+#Express 
+		$npm i express
+        TO handle/specialise routing		
+
+		
+
 
 
 
