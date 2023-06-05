@@ -21,7 +21,8 @@ let dvs = [
 
 let categoryRouter = require("./src/controller/categoryRouter");
 let productRouter = require("./src/controller/productRouter");
-let dvRouter = require("./src/controller/dvRouter")(dvs);
+let dvRouter = require("./src/controller/dvRouter")(dvs
+    );
 
 let morgan = require('morgan');
 let fs = require('fs');

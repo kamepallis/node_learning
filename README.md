@@ -125,12 +125,35 @@ hrlps to restart the app continuoulsy, after any change
 		app.use("/category", categoryRouter);
 		
 		
-		npm install morgon
-		npm install dotenv
+		$npm install morgon
+		$npm install dotenv
+		
+		let morgon = require('morgon');
+		let dotenv = requite('dotenv');
+		let fs = require('fs);
+		
+		dotenv.cinfig();
+		app.use(morgan('common', file stream));
 		
 		let categoryRouter = require("./src/controller/categoryRouter");
 		module.exports = categoryRouter;
 		
+		
+#Passing data to Router
+		let dvs = [];
+		let dvRouter = require("dvRouter.js")(dvs);
+		
+		
+		let dvRouter = express.Router();
+		function router(dvs) {
+			dvRouter.rout("/")
+				.get(function(req,res) => {
+					res.send(dvs);
+				});
+			return dvRouter;
+		}
+		
+		module.export = router;		
 		
 		
 #Ejs 
