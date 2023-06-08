@@ -19,3 +19,5 @@ _id = primary key
         randonmunber+unique+12byte size
 
 we can give our own , but it must be unique
+
+mongodb://localhost:27017

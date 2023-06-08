@@ -1,6 +1,8 @@
 let express = require('express');
 let categoryRouter = express.Router();
 
+const {getData} = require('./dbController');
+
 let category = [
     {
         "id":1,

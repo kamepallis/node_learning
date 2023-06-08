@@ -31,6 +31,8 @@ dotenv.config();
 
 let port = process.env.PORT || 9101;
 
+const {dbConnect} = require('./src/controller/dbController')
+
 
 //Router
 app.get("/",(req,res)=>{
@@ -45,6 +47,7 @@ app.use("/dvs", dvRouter);
 
 //creating server
 app.listen(port, (err)=> {
+    dbConnect();
     if(err)
         throw error;
     console.log("Running on port:" + port);
