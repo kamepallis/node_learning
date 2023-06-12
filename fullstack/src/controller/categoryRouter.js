@@ -30,7 +30,7 @@ categoryRouter.route("/")
     .get(async(req, res)=>{
         //res.send(category);
         let query = {};
-            let data = await getData('catgeory',query);4
+            let data = await getData('catgeory',query);
             res.send(data);
     });
 
